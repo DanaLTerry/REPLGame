@@ -57,11 +57,15 @@ when "goot"
   enter = gets
   
   part1 = "response1g"
+  
+else
+  "try again"
 end
 
 #clears screen
 clear_term()
-
+Question1 = "The interviewer asks you to share a little bit about yourself"
+Options1 = "Options: Play_it_safe, Play_the_Game_of_Office_Thrones"
 Question2 = "The interviewer asks \"What is your five-year plan?\""
 Options2 = "Options: Play_it_safe, Play_the_Game_of_Office_Thrones"
 case part1
@@ -75,6 +79,10 @@ when "response1g"
   puts"*Winter is certainly Coming* but you will be left cold, you weirdo! bwahahaha"
   puts "game over"
   abort
+else "try again"
+  puts "try again"
+  puts Question1
+  puts Options1
 end
 
 #Question 2
@@ -97,11 +105,12 @@ when "goot"
     part2 = "response2g"
     print "Press 'Enter' to proceed"
     enter = gets
+else 
+  "try again"
 end
 
 #clears screen
 clear_term()
-
 Question3 = "The interviewer asks \"What are your strengths?\""
 Options3 = "Options: Play_it_safe, Play_the_Game_of_Office_Thrones"
 case part2
@@ -110,10 +119,15 @@ when "response2s"
   puts Question3
   puts Options3
 when "response2g"
+  puts "The interviewer yells for security!"
   puts"This isn't Game of Thrones, you crazy person! This is reality!"
   puts"*Winter is certainly Coming* but you will be left cold, you weirdo! bwahahaha"
   puts "game over"
   abort
+else "try again"
+  puts "try again"
+  puts Question2
+  puts Options2
 end
 
 #Question 3
@@ -134,6 +148,9 @@ when "goot"
     part3 = "response3g"
     print "Press 'Enter' to proceed"
     enter = gets
+else
+  "try again"
+    
 end
 
 #clears screen
@@ -156,6 +173,10 @@ when "response3g"
   puts"*Winter is certainly Coming* but you will be left cold, you weirdo! *bwahahahaha!*"
   puts "game over"
   abort
+else "try again"
+  puts "try again"
+  puts Question3
+  puts Options3
 end
 
   
